@@ -46,7 +46,25 @@ Common locations:
 ---
 
 ## Study Approach
-- Daily practice
-- Hands-on terminal usage
-- Public documentation
+- Daily hands-on practice
 - Focus on fundamentals before automation
+- Public documentation of learning progress
+
+---
+
+## Topics Covered So Far
+- Linux users and groups
+- File ownership and permissions (r, w, x)
+- Basic permission management with chmod and chown
+- Process basics (ps, top, kill)
+- System logs overview and common log locations
+
+---
+
+## Next Topics (Planned)
+- Directory permissions and execution behavior
+- umask and default permissions
+- Advanced process management
+- System services and daemons
+- Shell scripting basics
+
