@@ -1,108 +1,113 @@
 # Linux Security Engineering — Study Journey
 
-This repository documents my hands-on study of Linux internals, permissions,
-processes, logs, and security mechanisms.
+This repository documents my hands-on study of Linux fundamentals focused on
+security, processes, permissions, logging, and privilege control.
 
-The focus is not tools, but understanding how the operating system works,
-how privilege is handled, and how failures are detected and audited.
+The goal is to deeply understand how Linux works internally in order to
+defend systems at a high level.
 
 ---
 
 ## Study Philosophy
 
-- Learn by executing commands
+- Learn by doing
+- Execute real commands
 - Observe system behavior
 - Read logs instead of guessing
-- Understand why something exists before judging if it is safe
+- Understand before judging
 
 ---
 
-## Topics Covered So Far
+## What I Have Studied So Far
 
-### Day 1 — Linux Navigation & Permissions
+### 1. Linux Navigation & Files
 - pwd, ls, cd
-- File permissions (rwx)
+- mkdir, touch, rm
+- File structure understanding
+
+Why this matters:  
+Knowing where you are and what exists is the first step of control.
+
+---
+
+### 2. Permissions & Ownership
+- rwx permissions
 - chmod (755, 600)
-- Difference between public and private files
+- public vs private files
+- basic security boundaries
 
 Why this matters:  
-Permissions are the first security boundary in Linux systems.
+Permissions are Linux’s first security layer.
 
 ---
 
-### Day 2 — Processes & Execution
+### 3. Processes & Execution
 - foreground vs background
-- sleep & jobs
-- kill
-- understanding process lifecycle
+- sleep, jobs
+- ps, top
+- kill, kill -9
+- process lifecycle
+- creating and stopping processes
 
 Why this matters:  
-Running processes are a common target of abuse.  
-You studied how they start, run and stop.
+Attackers abuse processes. Defenders must understand them first.
 
 ---
 
-### Day 3 — Logs & System Auditing
+### 4. System Monitoring
+- uptime
+- top
+- understanding CPU and memory usage
+- load average basics
+
+Why this matters:  
+You must know what “normal” looks like before detecting abuse.
+
+---
+
+### 5. Logs & Auditing
 - /var/log/syslog
 - /var/log/auth.log
 - less, tail, tail -f
-- real-time monitoring of authentication events
+- real-time log monitoring
 
 Why this matters:  
-Logs show errors, misuse of privileges and authentication activity.
+Logs show failures, attacks, and misuse of privileges.
 
 ---
 
-### Day 4 — Scripts & Automation
-- bash scripts (.sh)
-- execution permissions (+x)
-- difference between script and binary
-
-Why this matters:  
-Scripts automate tasks and must be controlled by permissions.
-
----
-
-### Day 5 — SUID & Privilege Escalation Concepts
-- What SUID is
-- Why passwd requires SUID
-- Why SUID is dangerous if misconfigured
-- Why modern systems reduce SUID usage
+### 6. Privilege & SUID
+- what SUID is
+- why some binaries need SUID
+- why SUID is dangerous if misconfigured
+- attacker vs defender mindset
 
 Key idea:  
-Every SUID binary is a potential security risk if badly configured.
+Every SUID binary is a potential attack surface.
 
 ---
 
-### Day 6 — Capabilities (Modern Privilege Control)
-- What Linux capabilities are
-- Why they replace broad SUID
-- Why granular privilege is safer
-- How misconfiguration still creates risk
+### 7. Linux Capabilities
+- what capabilities are
+- why they replace broad SUID
+- granular privilege model
+- risks of misconfiguration
 
----
-
-### Day 7 — Privilege & Authentication Context
-- privilege boundaries
-- authentication logs
-- execution context
-
-You studied how:
-- users gain privileges  
-- actions are logged  
-- execution changes with permissions  
+Why this matters:  
+Less privilege = less damage if compromised.
 
 ---
 
 ## Current Focus
-Deep understanding of:
-- permissions  
-- processes  
-- logs  
-- privilege control  
+
+- privilege boundaries  
+- process control  
+- log analysis  
+- attacker vs defender thinking  
 
 ---
 
 ## Disclaimer
-This repository is for defensive security education.  
-No exploitation, malware, or illegal activity is performed or documented.
+
+This repository is for defensive security education only.
+No illegal activity is performed or documented.
