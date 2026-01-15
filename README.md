@@ -1,113 +1,41 @@
-# Linux Security Engineering — Study Journey
+# Alisson Dorneles
 
-This repository documents my hands-on study of Linux fundamentals focused on
-security, processes, permissions, logging, and privilege control.
+Focused on Linux systems, Bash scripting and defensive automation.
 
-The goal is to deeply understand how Linux works internally in order to
-defend systems at a high level.
+## Skills in Development
 
----
+- Linux system analysis  
+- Process monitoring and control  
+- Bash scripting  
+- Log analysis  
+- Defensive automation (Blue Team mindset)
 
-## Study Philosophy
+## What You’ll Find Here
 
-- Learn by doing
-- Execute real commands
-- Observe system behavior
-- Read logs instead of guessing
-- Understand before judging
+This repository contains real projects built to:
 
----
+- Monitor system behavior  
+- Detect abnormal activity  
+- React automatically  
+- Register everything in logs  
 
-## What I Have Studied So Far
+Everything here was:
+- Written by me  
+- Tested by me  
+- Understood line by line  
 
-### 1. Linux Navigation & Files
-- pwd, ls, cd
-- mkdir, touch, rm
-- File structure understanding
+## Projects
 
-Why this matters:  
-Knowing where you are and what exists is the first step of control.
+### Automatic CPU Abuse Defense  
+Detects processes with high CPU usage and automatically terminates them.
 
----
+- Real system interaction  
+- No simulations  
+- Full automation  
+- Logging included  
 
-### 2. Permissions & Ownership
-- rwx permissions
-- chmod (755, 600)
-- public vs private files
-- basic security boundaries
+## Direction
 
-Why this matters:  
-Permissions are Linux’s first security layer.
+My focus is not tools — it is understanding how systems behave and how to control them.
 
----
-
-### 3. Processes & Execution
-- foreground vs background
-- sleep, jobs
-- ps, top
-- kill, kill -9
-- process lifecycle
-- creating and stopping processes
-
-Why this matters:  
-Attackers abuse processes. Defenders must understand them first.
-
----
-
-### 4. System Monitoring
-- uptime
-- top
-- understanding CPU and memory usage
-- load average basics
-
-Why this matters:  
-You must know what “normal” looks like before detecting abuse.
-
----
-
-### 5. Logs & Auditing
-- /var/log/syslog
-- /var/log/auth.log
-- less, tail, tail -f
-- real-time log monitoring
-
-Why this matters:  
-Logs show failures, attacks, and misuse of privileges.
-
----
-
-### 6. Privilege & SUID
-- what SUID is
-- why some binaries need SUID
-- why SUID is dangerous if misconfigured
-- attacker vs defender mindset
-
-Key idea:  
-Every SUID binary is a potential attack surface.
-
----
-
-### 7. Linux Capabilities
-- what capabilities are
-- why they replace broad SUID
-- granular privilege model
-- risks of misconfiguration
-
-Why this matters:  
-Less privilege = less damage if compromised.
-
----
-
-## Current Focus
-
-- privilege boundaries  
-- process control  
-- log analysis  
-- attacker vs defender thinking  
-
----
-
-## Disclaimer
-
-This repository is for defensive security education only.
-No illegal activity is performed or documented.
+This repository shows my learning through real system-level projects.
