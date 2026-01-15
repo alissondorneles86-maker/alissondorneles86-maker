@@ -29,13 +29,6 @@ Everything here was:
 ### Automatic CPU Abuse Defense  
 Detects processes with high CPU usage and automatically terminates them.
 
-- Real system interaction  
-- No simulations  
-- Full automation  
-- Logging included  
-
 ## Direction
 
 My focus is not tools — it is understanding how systems behave and how to control them.
-
-This repository shows my learning through real system-level projects.
