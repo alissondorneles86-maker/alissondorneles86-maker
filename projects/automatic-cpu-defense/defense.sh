@@ -1,18 +1,17 @@
 # defense.sh
 
 ## Functionality
-Runs the full automated response sequence:
-1. Executes `detect_cpu.sh` to find high CPU processes.
-2. Executes `kill_automatic.sh` to terminate abusive processes.
-3. Appends timestamp to `defense.log` for audit.
+- Executes `detect_cpu.sh` to identify high CPU usage processes.  
+- Executes `kill_automatic.sh` to terminate abusive processes automatically.  
+- Appends timestamps to `defense.log` for full audit tracking.  
 
 ## Result
-- All high CPU processes detected and killed automatically.
-- Logs updated with timestamps and action summaries.
-- Provides a single entry point to monitor and respond to CPU abuse.
+- All high CPU processes detected and terminated automatically.  
+- Logs updated with timestamps and action summaries.  
+- Single entry point for automated CPU abuse monitoring and response.  
 
 ## Purpose
-Learning exercise focusing on:
-- Bash scripting for automation
-- Defensive Linux operations
+Learning exercise focusing on:  
+- Bash scripting for automation  
+- Defensive Linux operations  
 - Blue Team response practices
