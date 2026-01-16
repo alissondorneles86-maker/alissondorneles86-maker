@@ -1,18 +1,18 @@
 # Automatic CPU Defense
 
 ## Functionality
-- Detect high CPU usage processes automatically.
-- Kill abusive processes immediately.
-- Log all actions in a timestamped file.
+- Detects processes exceeding defined CPU usage limits automatically.  
+- Terminates abusive processes immediately.  
+- Logs all actions in a timestamped file for auditing.
 
 ## Files
-- `detect_cpu.sh` → Detects processes exceeding CPU threshold
-- `kill_automatic.sh` → Kills detected processes automatically
-- `defense.sh` → Runs detection + kill automatically
+- `detect_cpu.sh` → Detects processes exceeding CPU threshold  
+- `kill_automatic.sh` → Kills detected processes automatically  
+- `defense.sh` → Runs detection and response automatically  
 
 ## Purpose
-Learning exercise focusing on:
-- Bash scripting
-- Linux process management
-- Defensive automation
-- Blue Team automation concepts
+Learning exercise focusing on:  
+- Bash scripting for automation  
+- Linux process monitoring and control  
+- Defensive automation concepts  
+- Blue Team fundamentals
