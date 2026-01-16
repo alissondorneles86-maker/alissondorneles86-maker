@@ -1,16 +1,16 @@
 # detect_cpu.sh
 
 ## Functionality
-- Monitors all running processes.
-- Identifies processes exceeding the defined CPU usage limit.
-- Logs PID, CPU usage, and process name to `detect_cpu.txt`.
+- Monitors all running processes.  
+- Identifies processes exceeding the defined CPU usage limit.  
+- Logs PID, CPU usage, and process name to `detect_cpu.txt`.  
 - Appends timestamp and separator for clear auditing.
 
 ## Purpose
-This script is a learning exercise focused on:
-- Bash scripting
-- Linux process management
-- Defensive automation concepts
+Learning exercise focusing on:  
+- Bash scripting  
+- Linux process management  
+- Defensive automation concepts  
 - Blue Team fundamentals
 
 ## Usage
