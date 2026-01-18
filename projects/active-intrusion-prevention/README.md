@@ -1,22 +1,26 @@
 # Active Intrusion Prevention (Auto-Block)
 
 ## Functionality
-- Monitors `/var/log/auth.log` for failed login attempts and brute-force patterns.
-- Extracts and counts occurrences of suspicious IPs using `grep`, `awk`, and `sort`.
-- Automatically blocks offenders by adding `iptables -j DROP` rules.
-- Records all defensive actions in `auto_block.log` for security auditing.
+- Analyzes authentication logs to identify persistent brute-force attack patterns.
+- Dynamically correlates source IP addresses with failed access thresholds.
+- Executes automated firewall enforcement via `iptables` to neutralize threats.
+- Generates a timestamped audit trail for security monitoring and forensics.
+
+## Files
+- `auto_block.sh` → Main engine for log analysis and active response.
+- `auto_block.log` → Persistent log of neutralized threats and banned IPs.
 
 ## Purpose
 Learning exercise focusing on:
-- Log analysis and pattern recognition.
-- Network security and Linux firewall (`iptables`) management.
-- Developing automated reactive defense mechanisms (IPS).
-- Strengthening Blue Team fundamentals.
+- Automated threat detection and reactive security measures.
+- Linux network administration and firewall orchestration.
+- High-level data parsing and log-based intelligence.
+- Blue Team operational mindset and defensive infrastructure.
 
 ## Usage
 ```bash
-# Run the intrusion prevention script (requires sudo for iptables)
+# Execute the intrusion prevention engine (requires root privileges)
 sudo ./auto_block.sh
 
-# Check the history of blocked IPs
+# Monitor the ban history
 cat /var/log/auto_block.log
