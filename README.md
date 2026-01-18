@@ -25,8 +25,5 @@ Everything here was:
 ### Automatic CPU Abuse Defense
 Detects processes with high CPU usage and automatically terminates them.
 
-### Basic Linux Monitoring Automation
-Monitors CPU, memory, and disk usage automatically, logs system state, and alerts on disk overuse.
-
 ## Direction
 My focus is not tools — it is understanding how systems behave and how to control them.
