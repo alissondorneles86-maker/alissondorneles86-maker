@@ -1,70 +1,63 @@
 # Alisson Dorneles
-Focused on Linux systems, Bash scripting, and defensive automation (Blue Team mindset).
 
-## Skills in Development
-- Linux system analysis
-- User and permission auditing
-- Process monitoring and control
-- Bash scripting
-- Log analysis (auth, syslog)
-- Defensive automation
-- Incident-style system validation
+Focused on Linux systems, defensive automation, and Blue Team operations.
+
+## Profile
+I specialize in understanding **how Linux systems behave under normal and abnormal conditions**, and in designing **automated defensive responses** based on real system signals.
+
+My approach prioritizes:
+- System visibility
+- Log-driven intelligence
+- Automation with accountability
+- Defensive thinking grounded in real operations
+
+## Core Skills
+- Linux system analysis and hardening
+- User, permission, and session auditing
+- Process monitoring and resource control
+- Log analysis and threat correlation
+- Bash scripting for defensive automation
+- Blue Team operational mindset
 
 ## What You’ll Find Here
-This repository contains **real defensive projects** built to:
+This repository contains **practical security projects** designed to:
 
-- Analyze Linux system state as in real production environments
-- Detect abnormal behavior and security-relevant events
-- React automatically using scripts and system controls
-- Maintain clear audit logs for traceability and forensics
+- Monitor system behavior
+- Detect abnormal or malicious activity
+- React automatically using defensive logic
+- Maintain clear audit trails for review and forensics
 
 Everything here was:
 - Written by me
 - Tested by me
 - Understood line by line
-- Built with a real Blue Team operational mindset
+- Built to reflect real-world defensive scenarios
 
 ## Projects
 
 ### Automatic CPU Abuse Defense
-Automated detection and response to abusive CPU usage.
-
-- Monitors running processes
-- Identifies processes exceeding defined CPU thresholds
-- Terminates abusive processes automatically
-- Maintains detailed audit logs
+Automated detection and termination of processes exceeding defined CPU thresholds.
 
 Focus:
-- Linux process control
-- Bash automation
-- Defensive response logic
-
----
+- Process behavior analysis
+- Resource abuse mitigation
+- Automated response with logging
 
 ### Active Intrusion Prevention (Auto-Block)
-Automated protection against brute-force authentication attacks.
-
-- Analyzes authentication logs (`/var/log/auth.log`)
-- Identifies repeated failed access attempts
-- Blocks offending IPs automatically via firewall rules
-- Supports dry-run mode and IP whitelisting
-- Generates structured security logs for auditing
+Log-based intrusion prevention system that detects brute-force authentication attempts and enforces automated firewall blocking.
 
 Focus:
-- Log-based threat detection
-- Firewall automation
-- Intrusion prevention concepts
-- Blue Team defensive operations
-
----
+- Authentication log intelligence
+- Threshold-based detection
+- Defensive firewall automation
+- Blue Team response patterns
 
 ## Direction
-My focus is not on tools.
+My focus is **not tools**.
 
-My focus is on:
-- Understanding how Linux systems behave
-- Knowing what is normal and what is not
-- Detecting deviations early
-- Automating defensive responses safely and audibly
+It is:
+- Understanding system behavior
+- Controlling it through automation
+- Designing defenses that make sense in production environments
 
-This repository reflects how I study, think, and work.
+This repository reflects a continuous progression toward **high-level defensive Linux operations and security engineering**.
